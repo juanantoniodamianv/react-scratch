@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import * as faceapi from 'face-api.js'
+const path = require('path')
 
 export const Home = () => {
   useEffect(() => {
     const video = document.getElementById('video')
-    const MODEL_URL = 'http://localhost:8080/public/models'
-    console.log(MODEL_URL)
+    const MODEL_URL = path.join(__dirname, '/public/models')
 
     Promise.all([
       faceapi.nets.tinyFaceDetector.loadFromUri(MODEL_URL),
