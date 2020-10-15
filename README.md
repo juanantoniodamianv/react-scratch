@@ -1,5 +1,12 @@
-# curso-platzi-react-avanzado ⚛️
+# On VSC install these plugins to format your code each before save:
+  - eslint
+  - prettier
 
-¡Sígueme en Youtube! https://www.youtube.com/midudev
-
-Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)
+  then add these configurations:
+  ```
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.format.enable": true,
+    "prettier.eslintIntegration": true
+  ```
